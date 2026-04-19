@@ -5,6 +5,7 @@ from fabric import Application
 from fabric.widgets.scrolledwindow import ScrolledWindow
 from fabric.widgets.image import Image
 from fabric.widgets.revealer import Revealer
+from fabric.utils import invoke_repeater
 from pathlib import Path
 from PIL import Image as PILImage
 from PIL import ImageFilter
@@ -244,6 +245,9 @@ class BgSelector(WaylandWindow):
             ]
         )
         self.toggle()
+        invoke_repeater(150, lambda: (self.cycle_carousel("right"), self.scroll_to_centered_wallpaper(), False)[2], initial_call=False)
+    
+
 
     def handle_arrow(self, arrow_key):
         match arrow_key:
