@@ -1,10 +1,8 @@
-@import "colors.css";
-
 #volumeosd-pill {
     min-width: 168px;
     min-height: 24px;
     background-color: @bg-color;
-    border-radius: 9999px;
+    border-radius: 12px;
     padding: 8px 18px;
 }
 
@@ -15,13 +13,13 @@
 #volumeosd-slider trough {
     background-color: @surface-elevated-color;
     min-height: 4px;
-    border-radius: 2px;
+    border-radius: 12px;
 }
 
 #volumeosd-slider highlight {
     background-color: @accent-color;
     min-height: 4px;
-    border-radius: 2px;
+    border-radius: 12px;
 }
 
 #volumeosd-pill.muted {

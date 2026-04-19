@@ -1,5 +1,3 @@
-@import "colors.css";
-
 * {
     all : unset;
     font-size: 12pt;
@@ -16,7 +14,7 @@
 #appdrawer-searchbar {
     background-color: @surface-color;
     padding: 25px;
-    border-radius: 5px;
+    border-radius: 12px;
 }
 
 #appdrawer-viewport {
@@ -25,7 +23,7 @@
 
 #appdrawer-flowbox flowboxchild {
     padding: 46px 36px;
-    border-radius: 8px;
+    border-radius: 12px;
 }
 
 #appdrawer-flowbox flowboxchild:selected {
