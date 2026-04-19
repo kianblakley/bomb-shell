@@ -229,7 +229,7 @@ class StreamWidget(Box):
             h_align="start",
             h_expand=True,
             ellipsize="end",
-            max_chars_width=40,
+            max_chars_width=37,
             line_wrap="word-char",
         )
         self.volume_slider = Scale(
