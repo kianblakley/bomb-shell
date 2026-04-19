@@ -1,0 +1,5 @@
+*.md
+!README.md
+!todo.md
+__pycache__/
+venv/

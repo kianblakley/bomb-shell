@@ -1,0 +1,266 @@
+@import "colors.css";
+
+* {
+    all : unset;
+    color: @fg-color;
+}
+
+#controlcenter-main {
+    background-color: @bg-color;
+    padding: 10px;
+}
+
+#controlcenter-corner {
+    background-color: @bg-color;
+}
+
+
+
+
+#controlcenter-status {
+    background-color: transparent;
+}
+
+#controlcenter-power-bar {
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 3px;
+}
+
+#controlcenter-power-btn, #controlcenter-power-btn-main {
+    padding: 6px;
+    border-radius: 0;
+}
+
+#controlcenter-quickaccess-btn {
+    padding: 12px;
+    border-radius: 0;
+}
+
+#controlcenter-navbar {
+    background-color: transparent;
+    
+}
+
+#controlcenter-devices-stack {
+    background-color: @surface-color;
+    border-radius: 0;
+    
+}
+
+
+
+
+#controlcenter-scrollable, #controlcenter-scrollable viewport {
+    background-color: transparent;
+}
+
+#controlcenter-scrollable scrollbar {
+    background-color: transparent;
+    min-width: 0;
+    min-height: 0;
+}
+
+#controlcenter-scrollable scrollbar slider {
+    background-color: transparent;
+    min-width: 0;
+    min-height: 0;
+}
+
+#controlcenter-scrollable scrollbar trough {
+    background-color: transparent;
+}
+
+
+
+#controlcenter-panel-header {
+    min-height: 34px;
+    padding-left: 5px;
+}
+
+
+
+
+
+
+
+
+#controlcenter-action-row {
+    margin-top: 5px;
+}
+
+
+
+
+#controlcenter-section-title {
+    
+    
+    color: @secondary-fg-color;
+    
+}
+
+#controlcenter-status-label {
+    font-size: 11px;
+    color: @secondary-fg-color;
+}
+
+#controlcenter-empty-label {
+    color: @secondary-fg-color;
+}
+
+
+#controlcenter-navbar-btn {
+    padding: 8px 12px;
+    color: @secondary-fg-color;
+    border-bottom: 2px solid transparent;
+    margin: 0 1px;
+    border-radius: 0;
+}
+
+#controlcenter-navbar-btn.active {
+    color: @fg-color;
+    border-bottom: 2px solid #ffffff;
+}
+
+
+#controlcenter-calendar-box {
+    padding: 15px;
+    background-color: @surface-color;
+    border-radius: 0;
+}
+
+#controlcenter-calendar {
+    color: @fg-color;
+}
+
+calendar.header {
+    border-bottom: 1px solid @border-color;
+    padding-bottom: 5px;
+}
+
+calendar.button {
+    padding: 2px;
+    border-radius: 0;
+}
+
+calendar:selected {
+    background-color: @surface-elevated-color;
+    color: #f38ba8;
+    border-radius: 0;
+    padding: 0;
+}
+
+
+#controlcenter-slider {
+    padding-right: 10px;
+}
+
+#controlcenter-slider trough {
+    background-color: @surface-elevated-color;
+    min-height: 6px;
+    border-radius: 0;
+    margin: 8px 0;
+}
+
+#controlcenter-slider highlight {
+    background-color: @accent-color;
+    border-radius: 0;
+}
+
+#controlcenter-slider slider {
+    background-color: @accent-color;
+    border-radius: 0;
+    min-height: 14px;
+    min-width: 14px;
+    margin: -4px;
+}
+
+
+#controlcenter-switch trough {
+    background-color: @surface-elevated-color;
+    border-radius: 0;
+    min-width: 32px;
+    min-height: 20px;
+}
+
+#controlcenter-switch:checked trough {
+    background-color: @accent-color;
+}
+#controlcenter-panel-container {
+    padding: 10px;
+    background-color: transparent;
+}
+#controlcenter-audio-item, #controlcenter-audio-fixed-row, #controlcenter-list-item {
+    background-color: @bg-color;
+    border-radius: 0;
+    padding: 10px;
+}
+#controlcenter-audio-item:hover, #controlcenter-audio-item.hovered {
+    background-color: @bg-hover-color;
+}
+#controlcenter-btn {
+    background-color: @surface-elevated-color;
+    border-radius: 0;
+    padding: 6px 12px;
+}
+#controlcenter-btn:hover {
+    background-color: @surface-elevated-hover-color;
+}
+
+#displays-popup-content {
+    background-color: transparent;
+    padding: 0;
+}
+
+#displays-popup-outer {
+    background-color: @surface-elevated-color;
+    padding: 0 3px 3px 3px;
+}
+
+#displays-popup-item {
+    background-color: @surface-color;
+    padding: 6px 12px;
+}
+
+#displays-popup-item:hover {
+    background-color: @surface-hover-color;
+}
+
+#controlcenter-history-item-eventbox {
+    background-color: @bg-color;
+    border-radius: 0;
+    padding: 0;
+}
+#controlcenter-history-item-eventbox #notifications-widget {
+    background-color: @bg-color;
+}
+#audio-popup-content {
+    background-color: transparent;
+    padding: 0;
+}
+
+#audio-popup-outer {
+    background-color: @bg-color;
+    padding: 3px 3px 0 3px;
+}
+
+#audio-popup-item {
+    background-color: @surface-color;
+    padding: 6px 12px;
+}
+
+#audio-popup-item:hover {
+    background-color: @surface-hover-color;
+}
+
+#audio-popup-item.active {
+    background-color: @surface-hover-color;
+}
+
+#controlcenter-panel-container #notifications-svg {
+    
+}
+
+#controlcenter-profile-picture {
+    border: 1px solid @fg-color; 
+    padding: 2px;
+}

@@ -1,0 +1,13 @@
+@import "colors.css";
+
+* {
+    all: unset;
+}
+
+#bgselector-main {
+    background-color: @bg-color;
+}
+
+#bgselector-wallpaper-item {
+    
+}

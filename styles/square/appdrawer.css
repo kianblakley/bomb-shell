@@ -1,0 +1,37 @@
+@import "colors.css";
+
+* {
+    all : unset;
+    font-size: 12pt;
+}
+
+#appdrawer-background {
+    
+}
+
+#appdrawer-main {
+    background-color: @bg-color;
+}
+
+#appdrawer-searchbar {
+    background-color: @surface-color;
+    padding: 25px;
+    border-radius: 0;
+}
+
+#appdrawer-viewport {
+    margin: 86px 0px;
+}
+
+#appdrawer-flowbox flowboxchild {
+    padding: 46px 36px;
+    border-radius: 0;
+}
+
+#appdrawer-flowbox flowboxchild:selected {
+    background-color: @surface-color;
+}
+
+#appdrawer-label {
+    color: @fg-color;
+}

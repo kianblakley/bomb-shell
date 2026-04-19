@@ -1,0 +1,72 @@
+@import "colors.css";
+
+* {
+    all: unset;
+    color: @fg-color;
+}
+
+#notifications-container {
+    background-color: @bg-color;
+    border-radius: 0px 0px 0px 10px;
+    padding: 5px 10px;
+}
+
+#notifications-widget {
+    background-color: @surface-color;
+    border-radius: 10px;
+    padding: 10px 10px 0px 10px;
+    margin: 5px 0px;
+}
+
+#notifications-svg {
+    border-radius: 50%;
+    padding: 4px;
+}
+
+#notifications-close.hovered {
+    background-color: @surface-elevated-color;
+    border-radius: 50%;
+}
+
+#notifications-corner {
+    background-color: @bg-color;
+}
+
+#notifications-summary {
+    color: @fg-color;
+}
+
+#notifications-app-name {
+    font-size: 12px;
+}
+
+#notifications-body {
+    font-size: 12px;
+    color: @fg-color;
+}
+
+#notifications-action-button {
+    background-color: @surface-elevated-color;
+    border-radius: 2px;
+    padding: 2px;
+    margin: 5px 0px 5px 0px;
+}
+
+#notifications-action-button.hovered {
+    background-color: @surface-elevated-hover-color;
+}
+
+#notifications-test {
+    
+    color: rgba(0, 255, 255, 0);
+}
+
+#notifications-overlay {
+    
+    padding: 10px;
+    margin: 10px;
+}
+
+#notifications-revealer {
+    
+}
