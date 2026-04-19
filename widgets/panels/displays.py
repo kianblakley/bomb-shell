@@ -65,6 +65,7 @@ class DisplaysPanel(Box):
     def update_list(self):
         for c in self.display_list.get_children():
             self.display_list.remove(c)
+            c.destroy()
         outputs = niri_service.get_outputs()
         self.count_label.set_label(
             f"{len(outputs)} Display{'s' if len(outputs) != 1 else ''} Connected"
@@ -88,6 +89,7 @@ class DisplayWidget(Box):
         invoke_repeater(
             100, self.setup_popups, output_info["modes"], initial_call=False
         )
+        self.connect("destroy", self.on_destroy)
 
     def build_ui(self, output_info):
         icon = Image(
@@ -165,6 +167,8 @@ class DisplayWidget(Box):
         mode_button_width = self.mode_button.get_allocated_width()
         scale_button_width = self.scale_button.get_allocated_width()
         if mode_button_width > 1 and scale_button_width > 1:
+            if self.mode_popup:
+                self.mode_popup.destroy()
             self.mode_popup = PopupMenu(
                 parent=self.parent_window,
                 pointing_to=self.mode_button,
@@ -189,6 +193,8 @@ class DisplayWidget(Box):
                 )
                 self.mode_popup.add_item(btn)
 
+            if self.scale_popup:
+                self.scale_popup.destroy()
             self.scale_popup = PopupMenu(
                 parent=self.parent_window,
                 pointing_to=self.scale_button,
@@ -212,6 +218,14 @@ class DisplayWidget(Box):
                 self.scale_popup.add_item(btn)
             return False
         return True
+
+    def on_destroy(self, *args):
+        if self.mode_popup:
+            self.mode_popup.destroy()
+            self.mode_popup = None
+        if self.scale_popup:
+            self.scale_popup.destroy()
+            self.scale_popup = None
 
     def toggle_popup(self, popup):
         if not popup:

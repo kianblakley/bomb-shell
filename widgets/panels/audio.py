@@ -175,6 +175,7 @@ class AudioPanel(Box):
         for c in [self.stream_list, self.output_active_row, self.input_active_row]:
             for child in c.get_children():
                 c.remove(child)
+                child.destroy()
         streams = list(self.audio.applications) + list(self.audio.recorders)
         self.count_label.set_label(
             f"{len(streams)} Stream{'s' if len(streams) != 1 else ''} Playing"
@@ -331,6 +332,8 @@ class ActiveDeviceWidget(EventBox):
             return True
         width = parent.get_allocated_width()
         if width > 1:
+            if self.popup:
+                self.popup.destroy()
             self.popup = PopupMenu(
                 parent=self.parent_window,
                 pointing_to=parent,
@@ -385,6 +388,7 @@ class ActiveDeviceWidget(EventBox):
     def on_destroy(self, *args):
         if self.popup:
             self.popup.destroy()
+            self.popup = None
 
     def on_drag_start(self, *args):
         self._dragging = True
