@@ -14,7 +14,7 @@
 #appdrawer-searchbar {
     background-color: @surface-color;
     padding: 25px;
-    border-radius: 12px;
+    border-radius: 0;
 }
 
 #appdrawer-viewport {
@@ -23,7 +23,7 @@
 
 #appdrawer-flowbox flowboxchild {
     padding: 46px 36px;
-    border-radius: 12px;
+    border-radius: 0;
 }
 
 #appdrawer-flowbox flowboxchild:selected {

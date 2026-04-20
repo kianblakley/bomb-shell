@@ -11,7 +11,7 @@ class Config:
         except Exception as e:
             print(e)
             
-        self.style_sheet = self.bomb_shell_root / "styles" / ("rounded" if self.get_setting("rounded_corners") else "square") / "main.css" 
+        self.style_sheet = self.bomb_shell_root / "styles" / ("transparent" if self.get_setting("transparency") else "opaque") / "main.css" 
 
         self.home_dir = Path("~/").expanduser()
         self.cache_dir = self.home_dir / ".cache/bomb-shell/"

@@ -26,12 +26,12 @@
 
 #controlcenter-power-btn, #controlcenter-power-btn-main {
     padding: 6px;
-    border-radius: 12px;
+    border-radius: 0;
 }
 
 #controlcenter-quickaccess-btn {
     padding: 12px;
-    border-radius: 12px;
+    border-radius: 0;
 }
 
 #controlcenter-navbar {
@@ -41,7 +41,7 @@
 
 #controlcenter-devices-stack {
     background-color: @surface-color;
-    border-radius: 12px;
+    border-radius: 0;
     
 }
 
@@ -111,7 +111,7 @@
     color: @secondary-fg-color;
     border-bottom: 2px solid transparent;
     margin: 0 1px;
-    border-radius: 12px 12px 0 0;
+    border-radius: 0;
 }
 
 #controlcenter-navbar-btn.active {
@@ -123,7 +123,7 @@
 #controlcenter-calendar-box {
     padding: 15px;
     background-color: @surface-color;
-    border-radius: 12px;
+    border-radius: 0;
 }
 
 #controlcenter-calendar {
@@ -137,13 +137,13 @@ calendar.header {
 
 calendar.button {
     padding: 2px;
-    border-radius: 12px;
+    border-radius: 0;
 }
 
 calendar:selected {
     background-color: @surface-elevated-color;
     color: #f38ba8;
-    border-radius: 12px;
+    border-radius: 0;
     padding: 0;
 }
 
@@ -155,18 +155,18 @@ calendar:selected {
 #controlcenter-slider trough {
     background-color: @surface-elevated-color;
     min-height: 6px;
-    border-radius: 12px;
+    border-radius: 0;
     margin: 8px 0;
 }
 
 #controlcenter-slider highlight {
     background-color: @accent-color;
-    border-radius: 12px;
+    border-radius: 0;
 }
 
 #controlcenter-slider slider {
     background-color: @accent-color;
-    border-radius: 12px;
+    border-radius: 0;
     min-height: 14px;
     min-width: 14px;
     margin: -4px;
@@ -175,7 +175,7 @@ calendar:selected {
 
 #controlcenter-switch trough {
     background-color: @surface-elevated-color;
-    border-radius: 12px;
+    border-radius: 0;
     min-width: 32px;
     min-height: 20px;
 }
@@ -189,7 +189,7 @@ calendar:selected {
 }
 #controlcenter-audio-item, #controlcenter-audio-fixed-row, #controlcenter-list-item {
     background-color: @bg-color;
-    border-radius: 12px;
+    border-radius: 0;
     padding: 10px;
 }
 #controlcenter-audio-item:hover, #controlcenter-audio-item.hovered {
@@ -197,7 +197,7 @@ calendar:selected {
 }
 #controlcenter-btn {
     background-color: @surface-elevated-color;
-    border-radius: 12px;
+    border-radius: 0;
     padding: 6px 12px;
 }
 #controlcenter-btn:hover {
@@ -212,13 +212,11 @@ calendar:selected {
 #displays-popup-outer {
     background-color: @surface-elevated-color;
     padding: 0 3px 3px 3px;
-    border-radius: 12px;
 }
 
 #displays-popup-item {
     background-color: @surface-color;
     padding: 6px 12px;
-    border-radius: 12px;
 }
 
 #displays-popup-item:hover {
@@ -227,7 +225,7 @@ calendar:selected {
 
 #controlcenter-history-item-eventbox {
     background-color: @bg-color;
-    border-radius: 12px;
+    border-radius: 0;
     padding: 0;
 }
 #controlcenter-history-item-eventbox #notifications-widget {
@@ -241,13 +239,11 @@ calendar:selected {
 #audio-popup-outer {
     background-color: @bg-color;
     padding: 3px 3px 0 3px;
-    border-radius: 12px;
 }
 
 #audio-popup-item {
     background-color: @surface-color;
     padding: 6px 12px;
-    border-radius: 12px;
 }
 
 #audio-popup-item:hover {

@@ -5,18 +5,18 @@
 
 #notifications-container {
     background-color: @bg-color;
-    border-radius: 0 0 0 12px;
+    border-radius: 0;
     padding: 10px 10px 0px 10px;
 }
 #notifications-widget {
     background-color: @surface-color;
-    border-radius: 12px;
+    border-radius: 0;
     padding: 10px 10px 5px 10px;
     margin: 0px 0px 10px 0px; 
 }
 #notifications-history-widget {
     background-color: @bg-color;
-    border-radius: 12px;
+    border-radius: 0;
     padding: 10px 10px 5px 10px;
     margin: 0px 0px 10px 0px; 
 }
@@ -51,7 +51,7 @@
 
 #notifications-action-button {
     background-color: @surface-elevated-color;
-    border-radius: 12px;
+    border-radius: 0;
     padding: 2px;
     margin: 5px 0px 5px 0px;
 }

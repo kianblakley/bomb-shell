@@ -82,32 +82,32 @@ class ControlCenter(WaylandWindow):
 
         self.bg_event_box = EventBox(child=self.main_container)
 
-        self.corners = Box(orientation="v")
-        if config.get_setting("rounded_corners"):
-            self.corners.add(
-                Corner(
-                    orientation="top-right",
-                    size=config.corner_size,
-                    v_align="start",
-                    h_align="end",
-                    name="controlcenter-corner",
-                )
-            )
-            self.corners.add(Box(v_expand=True))
-            self.corners.add(
-                Corner(
-                    orientation="bottom-right",
-                    size=config.corner_size,
-                    v_align="end",
-                    h_align="end",
-                    name="controlcenter-corner",
-                )
-            )
-        else:
-            self.corners.add(Box(v_expand=True))
+        # self.corners = Box(orientation="v")
+        # if config.get_setting("rounded_corners"):
+        #     self.corners.add(
+        #         Corner(
+        #             orientation="top-right",
+        #             size=config.corner_size,
+        #             v_align="start",
+        #             h_align="end",
+        #             name="controlcenter-corner",
+        #         )
+        #     )
+        #     self.corners.add(Box(v_expand=True))
+        #     self.corners.add(
+        #         Corner(
+        #             orientation="bottom-right",
+        #             size=config.corner_size,
+        #             v_align="end",
+        #             h_align="end",
+        #             name="controlcenter-corner",
+        #         )
+        #     )
+        # else:
+        #     self.corners.add(Box(v_expand=True))
 
         self.revealer = Revealer(
-            child=Box(children=[self.corners, self.bg_event_box]),
+            child=Box(children=[self.bg_event_box]),
             transition_duration=200,
             transition_type="slide-left",
         )

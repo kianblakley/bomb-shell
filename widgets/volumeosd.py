@@ -34,14 +34,17 @@ class VolumeOSD(WaylandWindow):
         )
 
         self.revealer = Revealer(
-            child=Box(orientation="v", children=[self.osd_container, Box(size=50)]),
+            child=Box(orientation="v", children=self.osd_container),
             transition_type="slide-up",
             transition_duration=300,
         )
+        self.revealer_container = Box(
+            size=1,
+            children=self.revealer
+        )
 
         self.children = Box(
-            style="padding: 1px;",
-            children=[self.revealer],
+            children=self.revealer_container,
             name="volumeosd-revealer",
         )
 
