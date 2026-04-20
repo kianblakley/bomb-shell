@@ -25,27 +25,27 @@ class NotificationsOSD(WaylandWindow):
         self.notifications_frame = Box()
         self.root_box = Box(orientation="v")
 
-        if config.get_setting("rounded_corners"):
-            self.left_corner = Corner(
-                orientation="top-right",
-                size=(config.corner_size, config.corner_size),
-                name="notifications-corner",
-                v_align="start",
-            )
-            self.bottom_corner = Corner(
-                orientation="top-right",
-                size=(config.corner_size, config.corner_size),
-                name="notifications-corner",
-                v_align="end",
-                h_align="end",
-            )
-            self.notifications_frame.add(self.left_corner)
-            self.notifications_frame.add(self.notifications_container)
-            self.root_box.add(self.notifications_frame)
-            self.root_box.add(self.bottom_corner)
-        else:
-            self.notifications_frame.add(self.notifications_container)
-            self.root_box.add(self.notifications_frame)
+        # if config.get_setting("rounded_corners"):
+        #     self.left_corner = Corner(
+        #         orientation="top-right",
+        #         size=(config.corner_size, config.corner_size),
+        #         name="notifications-corner",
+        #         v_align="start",
+        #     )
+        #     self.bottom_corner = Corner(
+        #         orientation="top-right",
+        #         size=(config.corner_size, config.corner_size),
+        #         name="notifications-corner",
+        #         v_align="end",
+        #         h_align="end",
+        #     )
+        #     self.notifications_frame.add(self.left_corner)
+        #     self.notifications_frame.add(self.notifications_container)
+        #     self.root_box.add(self.notifications_frame)
+        #     self.root_box.add(self.bottom_corner)
+        # else:
+        self.notifications_frame.add(self.notifications_container)
+        self.root_box.add(self.notifications_frame)
 
         self.revealer = Revealer(
             child=self.root_box, transition_type="slide-down", transition_duration=300
