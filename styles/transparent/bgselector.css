@@ -3,9 +3,6 @@
 }
 
 #bgselector-main {
-    background-color: @bg-color;
+    background-color: transparent;
 }
 
-#bgselector-wallpaper-item {
-    
-}

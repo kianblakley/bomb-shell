@@ -16,3 +16,7 @@
 @define-color warning-color #f9e2af;
 @define-color error-color #cf6679;                         
 @define-color success-color #a6e3a1;
+
+@define-color layer-1 rgba(0,0,0,0.3);
+@define-color layer-2 rgba(0,0,0,0.8);
+@define-color layer-3 rgba(55,55,55,0.3);

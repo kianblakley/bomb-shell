@@ -1,5 +1,9 @@
+* {
+    all: unset;
+}
+
 #volumeosd-pill {
-    background-color: @bg-color;
+    background-color: @layer-2;
     padding: 8px 24px;
 }
 
