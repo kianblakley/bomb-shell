@@ -23,7 +23,7 @@ class AppDrawer(WaylandWindow):
     def __init__(self, **kwargs):
         super().__init__(
             layer="overlay",
-            anchor="top bottom left right",
+            anchor="bottom",
             keyboard_mode="none",
             pass_through=True,
             **kwargs,
@@ -97,17 +97,15 @@ class AppDrawer(WaylandWindow):
         )
 
         self.revealer = Revealer(
-            transition_type="crossfade",
+            transition_type="slide-up",
             transition_duration=200,
             child=self.main_container,
             v_align="end",
         )
 
         self.revealer_container = Box(
-            size=SCREEN_SIZE,
+            size=1,
             children=self.revealer,
-            v_align="fill",
-            h_align="fill",
             name="appdrawer-background",
         )
         self.add(self.revealer_container)
