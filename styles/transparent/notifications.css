@@ -15,7 +15,7 @@
     margin: 0px 0px 10px 0px; 
 }
 #notifications-history-widget {
-    background-color: @bg-color;
+    background-color: @layer-4;
     border-radius: 0;
     padding: 10px 10px 5px 10px;
     margin: 0px 0px 10px 0px; 

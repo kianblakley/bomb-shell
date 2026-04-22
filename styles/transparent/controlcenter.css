@@ -141,7 +141,7 @@ calendar.button {
 }
 
 calendar:selected {
-    background-color: @surface-elevated-color;
+    background-color: @layer-5;
     color: #f38ba8;
     border-radius: 0;
     padding: 0;
@@ -188,7 +188,7 @@ calendar:selected {
     background-color: transparent;
 }
 #controlcenter-audio-item, #controlcenter-audio-fixed-row, #controlcenter-list-item {
-    background-color: @bg-color;
+    background-color: @layer-4;
     border-radius: 0;
     padding: 10px;
 }
@@ -196,7 +196,7 @@ calendar:selected {
     background-color: @bg-hover-color;
 }
 #controlcenter-btn {
-    background-color: @surface-elevated-color;
+    background-color: @layer-5;
     border-radius: 0;
     padding: 6px 12px;
 }
