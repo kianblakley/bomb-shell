@@ -81,18 +81,26 @@ class AppDrawer(WaylandWindow):
             h_align="center",
         )
 
-        spacing = math.ceil(SCREEN_SIZE[1] * 0.05)
+        # spacing = math.ceil(SCREEN_SIZE[1] * 0.05)
 
         self.main_container = Box(
             size=SCREEN_SIZE,
             orientation="v",
+            # v_align='start',
             children=[
                 Box(v_expand=True),
-                self.search_bar,
-                self.scrolled_window,
+                Box(children = [
+                    self.search_bar,
+                    self.scrolled_window,
+                    ],
+                    orientation = 'v',
+                    spacing = 50
+                ),
+                # self.search_bar,
+                # self.scrolled_window,
                 Box(v_expand=True),
             ],
-            spacing=spacing,
+            spacing=0,
             name="appdrawer-main",
         )
 
