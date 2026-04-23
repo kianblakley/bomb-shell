@@ -153,7 +153,7 @@ calendar:selected {
 }
 
 #controlcenter-slider trough {
-    background-color: @surface-elevated-color;
+    background-color: @layer-5;
     min-height: 6px;
     border-radius: 0;
     margin: 8px 0;
@@ -210,12 +210,12 @@ calendar:selected {
 }
 
 #displays-popup-outer {
-    background-color: @surface-elevated-color;
+    background-color: @layer-5;
     padding: 0 3px 3px 3px;
 }
 
 #displays-popup-item {
-    background-color: @surface-color;
+    background-color: @layer-1;
     padding: 6px 12px;
 }
 
