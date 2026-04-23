@@ -225,6 +225,8 @@ class StreamWidget(Box):
         )
         self.stream = stream
         self._dragging = False
+        self._stream_volume_handler = None
+        self._stream_changed_handler = None
         self.icon = Image(icon_size=config.icon_sizes[4])
         self.name_label = Label(
             h_align="start",
@@ -243,8 +245,11 @@ class StreamWidget(Box):
         )
         self.volume_slider.connect("button-press-event", self.on_drag_start)
         self.volume_slider.connect("button-release-event", self.on_drag_end)
-        stream.connect("notify::volume", self.on_stream_volume_notify)
-        stream.connect("changed", self.on_stream_changed)
+        self._stream_volume_handler = stream.connect(
+            "notify::volume", self.on_stream_volume_notify
+        )
+        self._stream_changed_handler = stream.connect("changed", self.on_stream_changed)
+        self.connect("destroy", self.on_destroy)
         self.add(self.icon)
         self.add(
             Box(
@@ -277,6 +282,17 @@ class StreamWidget(Box):
     def on_stream_changed(self, *args):
         GLib.idle_add(self.refresh_ui)
 
+    def on_destroy(self, *args):
+        for handler in [self._stream_volume_handler, self._stream_changed_handler]:
+            if handler is None:
+                continue
+            try:
+                self.stream.disconnect(handler)
+            except Exception:
+                pass
+        self._stream_volume_handler = None
+        self._stream_changed_handler = None
+
     def refresh_ui(self):
         display_name, icon_name = resolve_stream_display(self.stream)
         self.name_label.set_label(display_name)
@@ -289,6 +305,8 @@ class ActiveDeviceWidget(EventBox):
         super().__init__(events=["button-press"], h_expand=True, **kwargs)
         self.device = device
         self._dragging = False
+        self._device_changed_handler = None
+        self._device_muted_handler = None
         self.parent_window = parent_window
         self.dev_type = dev_type
         container = Box(spacing=10, h_expand=True)
@@ -308,8 +326,10 @@ class ActiveDeviceWidget(EventBox):
         )
         self.slider.connect("button-press-event", self.on_drag_start)
         self.slider.connect("button-release-event", self.on_drag_end)
-        device.connect("changed", self.on_device_changed)
-        device.connect("notify::muted", lambda *_: self.on_device_changed())
+        self._device_changed_handler = device.connect("changed", self.on_device_changed)
+        self._device_muted_handler = device.connect(
+            "notify::muted", lambda *_: self.on_device_changed()
+        )
 
         self.arrow_icon = Image(
             icon_name="pan-down-symbolic", icon_size=config.icon_sizes[0]
@@ -386,6 +406,15 @@ class ActiveDeviceWidget(EventBox):
         return False
 
     def on_destroy(self, *args):
+        for handler_name in ["_device_changed_handler", "_device_muted_handler"]:
+            handler = getattr(self, handler_name)
+            if handler is None:
+                continue
+            try:
+                self.device.disconnect(handler)
+            except Exception:
+                pass
+            setattr(self, handler_name, None)
         if self.popup:
             self.popup.destroy()
             self.popup = None

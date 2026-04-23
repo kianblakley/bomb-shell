@@ -15,6 +15,8 @@ class VolumeOSD(WaylandWindow):
         self.audio = audio_service
         self.hide_timeout_id = None
         self.is_muted = None
+        self._speaker = None
+        self._speaker_changed_handler = None
         self.build_ui(screen_size)
         self.connect_signals()
 
@@ -56,9 +58,17 @@ class VolumeOSD(WaylandWindow):
     def on_new_speaker(self):
         if not self.audio.speaker:
             return
-        self.is_muted = self.audio.speaker.muted
-        self.slider.set_value(self.audio.speaker.volume)
-        self.audio.speaker.connect("changed", self.on_speaker_changed)
+        if self._speaker is not None and self._speaker_changed_handler is not None:
+            try:
+                self._speaker.disconnect(self._speaker_changed_handler)
+            except Exception:
+                pass
+        self._speaker = self.audio.speaker
+        self.is_muted = self._speaker.muted
+        self.slider.set_value(self._speaker.volume)
+        self._speaker_changed_handler = self._speaker.connect(
+            "changed", self.on_speaker_changed
+        )
 
     def on_speaker_changed(self):
         if not self.audio.speaker:
