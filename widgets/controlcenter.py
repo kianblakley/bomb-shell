@@ -121,9 +121,6 @@ class ControlCenter(WaylandWindow):
 
     def on_bg_clicked(self, widget, event):
         self.power_button.reset()
-        from widgets.panels.displays import DisplayWidget
-
-        DisplayWidget.close_active_popup()
         return False
 
     def toggle(self):

@@ -190,7 +190,4 @@ class NotificationHistory(Box):
         widget.reveal_all()
 
     def on_bg_clicked(self, widget, event):
-        from widgets.panels.displays import DisplayWidget
-
-        DisplayWidget.close_active_popup()
         return False
