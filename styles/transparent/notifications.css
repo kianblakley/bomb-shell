@@ -50,7 +50,7 @@
 }
 
 #notifications-action-button {
-    background-color: @surface-elevated-color;
+    background-color: @layer-5;
     border-radius: 0;
     padding: 2px;
     margin: 5px 0px 5px 0px;
