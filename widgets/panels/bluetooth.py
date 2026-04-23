@@ -266,9 +266,6 @@ class BluetoothPanel(Box):
         self.bluetooth_client.powered = not self.bluetooth_client.powered
 
     def on_bg_clicked(self, widget, event):
-        from widgets.panels.displays import DisplayWidget
-
-        DisplayWidget.close_active_popup()
         return False
 
 

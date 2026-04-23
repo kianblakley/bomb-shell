@@ -1,8 +1,4 @@
-                   
-
 from typing import Any, List, Literal
-
-
 import gi
 from fabric.core.service import Property, Service, Signal
 from fabric.utils import bulk_connect, exec_shell_command_async

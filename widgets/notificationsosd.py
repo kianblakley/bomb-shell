@@ -5,7 +5,6 @@ from fabric import Application
 from fabric.widgets.revealer import Revealer
 from widgets.common.notification_widget import NotificationWidget
 from utils.config import config
-from fabric.widgets.shapes.corner import Corner
 
 SCREEN_SIZE = niri_service.get_screen_size()
 

@@ -1,6 +1,5 @@
 from fabric.core.service import Property, Service, Signal
 
-
 class AppState(Service):
     __gtype_name__ = "AppState"
 

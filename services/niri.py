@@ -2,7 +2,6 @@ import subprocess
 import re
 import json
 
-
 class NiriClient:
     def __init__(self):
         pass

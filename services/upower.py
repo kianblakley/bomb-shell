@@ -1,5 +1,3 @@
-                   
-
 import dbus
 
 class UPowerManager:

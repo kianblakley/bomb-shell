@@ -305,9 +305,6 @@ class WifiPanel(Box):
             self.wifi_device.enabled = not self.wifi_device.enabled
 
     def on_bg_clicked(self, widget, event):
-        from widgets.panels.displays import DisplayWidget
-
-        DisplayWidget.close_active_popup()
         return False
 
 

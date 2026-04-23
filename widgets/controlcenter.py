@@ -1,7 +1,6 @@
 
 import gi
 import math
-import os
 import subprocess
 from datetime import datetime
 
@@ -11,7 +10,6 @@ from fabric.widgets.label import Label
 from fabric.widgets.wayland import WaylandWindow
 from fabric.widgets.box import Box
 from fabric.widgets.revealer import Revealer
-from fabric.widgets.shapes import Corner
 from services.bootstrap import (
     app_state,
     bluetooth_service,

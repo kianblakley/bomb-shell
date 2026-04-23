@@ -8,10 +8,9 @@ from fabric.widgets.flowbox import FlowBox
 from fabric.widgets.scrolledwindow import ScrolledWindow
 from fabric.widgets.image import Image
 from fabric.widgets.entry import Entry
-from fabric.utils import get_desktop_applications, invoke_repeater, idle_add
+from fabric.utils import get_desktop_applications, invoke_repeater
 from utils.config import config
 from rapidfuzz import fuzz, utils
-from pathlib import Path
 import json
 import math
 
