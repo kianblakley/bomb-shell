@@ -66,14 +66,23 @@ awww-daemon -n overview
 python main.py
 ```
 ## Autostart:
-If you start niri as a sytemd unit with `niri-session` or equivalent (recommended, see [here](https://niri-wm.github.io/niri/Example-systemd-Setup.html) for more details):
+The simplest method is to add the following lines to your niri `config.kdl`:
+> [!TIP]
+> Replace `~/bomb-shell` with the location at which you cloned this repo. 
+```bash
+spawn-sh-at-startup "awww-daemon -n workspaces"
+spawn-sh-at-startup "awww-daemon -n overview"
+spawn-sh-at-startup "~/bomb-shell/venv/bin/python main.py"
+```
+Alternatively, if you start niri as a sytemd unit with `niri-session` or equivalent (recommended, see [here](https://niri-wm.github.io/niri/Example-systemd-Setup.html) for more details) follow these steps:
+
 1. Create a systemd user configuration folder if it doesn't exist already:
 ```bash
 mkdir -p ~/.config/systemd/user
 ```
 2. Adjust and copy the provided `.service` files to the systemd config folder:
 > [!TIP]
-> Replace `%h/bomb-shell` with the location at which you cloned this repo in `bombshell.service`.
+> Replace `%h/bomb-shell` with the location at which you cloned this repo in `bombshell.service`.  
 > Replace `/usr/bin/awww-daemon` with the path to your `awww-daemon` binary in `awww@.service`.
 ```bash
 cp ~/bomb-shell/systemd/* ~/.config/systemd/user
@@ -84,21 +93,24 @@ systemctl --user add-wants niri.service bombshell.service
 systemctl --user add-wants niri.service awww@workspaces.service
 systemctl --user add-wants niri.service awww@overview.service
 ```
-
-Alternatively, add the following lines to your niri `config.kdl`:
-> [!TIP]
-> Replace `~/bomb-shell` with the location at which you cloned this repo. 
+The shell can now be restarted at anytime with:
 ```bash
-spawn-sh-at-startup "awww-daemon -n workspaces"
-spawn-sh-at-startup "awww-daemon -n overview"
-spawn-sh-at-startup "~/bomb-shell/venv/bin/python main.py"
+systemctl --user restart bombshell.service
 ```
+
 ## Configuration:
+### config.json:
+The `config.json` file in the root of the project allows you to adjust the folder that the background selector reads wallpapers from, as well as the profile picture displayed in the control center. Similarly if you dislike the default transparent look, the `config.json` provides functionality to switch to an opaque version with `"transparency" : false`.
+
+### colors.css:
+
+### Font & Icons:
+
 
 ## Acknowledgements:
-[@its-darsh](https://github.com/its-darsh) and the fabric community for building fabric and helping me out on the discord  
-[@Axenide](https://github.com/Axenide) for writing the upower and networking services  
-[@Inparsian](https://github.com/Inparsian) for inspiring the design of the control center  
+[@its-darsh](https://github.com/its-darsh) and the fabric community for building fabric and helping me out on the discord.
+[@Axenide](https://github.com/Axenide) for writing the upower and networking services.
+[@Inparsian](https://github.com/Inparsian) for inspiring the design of the control center.  
 
 
 
