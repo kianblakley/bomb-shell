@@ -99,17 +99,23 @@ systemctl --user restart bombshell.service
 ```
 
 ## Configuration:
-### config.json:
-The `config.json` file in the root of the project allows you to adjust the folder that the background selector reads wallpapers from, as well as the profile picture displayed in the control center. Similarly if you dislike the default transparent look, the `config.json` provides functionality to switch to an opaque version with `"transparency" : false`.
+The `config.json` file in the root of the project allows for limited configuration:
 
-### colors.css:
+| Key | Default Value | Function |
+| --- | --- | --- |
+| `"wallpapers_path"` | `"~/Pictures/wallpapers/"` | Set the folder from which the background selector reads wallpapers (demo wallpapers can be found in `wallpapers/`) |
+| `"profile_picture"` | `"./assets/penguin.png"` | Set the path to the user's picture displayed in the control center |
+| `"transparency"` | `true` | Allows the user to switch between the default `opaque` and `transparent` styles |
 
-### Font & Icons:
-
+The shell reads from GNOME's interface setting's which can be set via:
+```bash
+gsettings set org.gnome.desktop.interface icon-theme "Papirus"
+gsettings set org.gnome.desktop.interface font-name "JetBrains Mono Nerd Font 11"
+```
 
 ## Acknowledgements:
-[@its-darsh](https://github.com/its-darsh) and the fabric community for building fabric and helping me out on the discord.
-[@Axenide](https://github.com/Axenide) for writing the upower and networking services.
+[@its-darsh](https://github.com/its-darsh) and the fabric community for building fabric and helping me out on the discord.  
+[@Axenide](https://github.com/Axenide) for writing the upower and networking services.  
 [@Inparsian](https://github.com/Inparsian) for inspiring the design of the control center.  
 
 
