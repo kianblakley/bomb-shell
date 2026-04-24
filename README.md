@@ -8,11 +8,11 @@
 ## Installation:
 
 **1. Install the following dependencies for your distribution:**   
-| Dependency | Used For | Repo | Installation Instructions |
-| --- | --- | --- | --- |
-| `niri` | Window manager | [niri](https://github.com/niri-wm/niri) | https://niri-wm.github.io/niri/Getting-Started.html |
-| `fabric` | GUI toolkit | [fabric](https://github.com/Fabric-Development/fabric) | https://wiki.ffpy.org/getting-started/installation-guide/ |
-| `awww (formerly swww)` | Wallpaper daemon | [awww](https://codeberg.org/LGFae/awww) | https://codeberg.org/LGFae/awww |
+| Dependency | Used For | Installation Guide |
+| --- | --- | --- | 
+| [`niri`](https://github.com/niri-wm/niri) | Window manager | [niri](https://niri-wm.github.io/niri/Getting-Started.html) |
+| [`fabric`](https://github.com/Fabric-Development/fabric)| GUI toolkit | [fabric](https://wiki.ffpy.org/getting-started/installation-guide/) |
+| [`awww`](https://codeberg.org/LGFae/awww) | Wallpaper daemon |  [awww](https://codeberg.org/LGFae/awww) |
 > [!NOTE] 
 > Fabric's python package is already included in this project's `requirements.txt`, at the moment you only need to install fabric's system dependencies.
 
