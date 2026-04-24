@@ -10,13 +10,12 @@
 **1. Install the following dependencies for your distribution:**   
 > [!NOTE] 
 > Fabric's python package is already included in this project's `requirements.txt`, you only need to install fabric's system dependencies.
+
 | Dependency | Used For | Installation Guide |
 | --- | --- | --- | 
 | [`niri`](https://github.com/niri-wm/niri) | Window manager | [niri](https://niri-wm.github.io/niri/Getting-Started.html) |
 | [`fabric`](https://github.com/Fabric-Development/fabric)| GUI toolkit | [fabric](https://wiki.ffpy.org/getting-started/installation-guide/) |
 | [`awww`](https://codeberg.org/LGFae/awww) | Wallpaper daemon |  [awww](https://codeberg.org/LGFae/awww) |
-
-
 **2. Clone and navigate to the repo:**
 ```bash
 git clone https://github.com/kianblakley/bomb-shell.git
