@@ -28,7 +28,7 @@ cd bomb-shell
 ```bash
 python -m venv venv
 source venv/bin/activate
-pip install requirements.txt
+pip install -r requirements.txt
 
 ``` 
 **4. Add the following keybindings to your niri `config.kdl`:**
@@ -113,7 +113,7 @@ gsettings set org.gnome.desktop.interface icon-theme "Your icon theme"
 gsettings set org.gnome.desktop.interface font-name "Your font name"
 ```
 > [!NOTE]
-> The icon theme shown in the demo is [Papirus](), and the font is [Jet Brains Mono Nerd Font]().  
+> The icon theme shown in the demo is [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme), and the font is [Jet Brains Mono Nerd Font](https://www.nerdfonts.com/font-downloads).  
 > For the window configurations please see the example `config.kdl` in the project root.   
 > Additionally, the wallpapers shown in the demo can be found in `wallpapers/`.  
 
