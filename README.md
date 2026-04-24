@@ -14,24 +14,24 @@
 
 ## Installation:
 
-1. Install the above dependencies for your distribution. Installation instructions can be found here:  
-[niri](https://niri-wm.github.io/niri/Getting-Started.html), [fabric](https://wiki.ffpy.org/getting-started/installation-guide/), [awww](https://codeberg.org/LGFae/awww). 
+**1. Install the above dependencies for your distribution:**   
+Installation instructions can be found here: [niri](https://niri-wm.github.io/niri/Getting-Started.html), [fabric](https://wiki.ffpy.org/getting-started/installation-guide/), [awww](https://codeberg.org/LGFae/awww). 
 > [!NOTE] 
 > Fabric's python package is already included in this project's `requirements.txt`, at the moment you only need to install fabric's system dependencies.
 
-2. Clone and navigate to the repo:
+**2. Clone and navigate to the repo:**
 ```bash
 git clone https://github.com/kianblakley/bomb-shell.git
 cd bomb-shell
 ```
-3. Create a venv and install python dependencies:
+**3. Create a venv and install python dependencies:**
 ```bash
 python -m venv venv
 source venv/bin/activate
 pip install requirements.txt
 
 ``` 
-4. Add the following keybindings to your niri `config.kdl`:
+**4. Add the following keybindings to your niri `config.kdl`:**
 > [!TIP]
 > Replace `~/bomb-shell` with the location at which you cloned this repo. 
 ```
@@ -39,7 +39,7 @@ Mod+D {spawn-sh "~/bomb-shell/venv/bin/python -m fabric execute bombshell \"app.
 Mod+B {spawn-sh "~/bomb-shell/venv/bin/python -m fabric execute bombshell \"app.bg_selector.toggle()\""; }
 Mod+E {spawn-sh "~/bomb-shell/venv/bin/python -m fabric execute bombshell \"app.control_center.toggle()\""; }
 ```
-5. Add the following layer rules to your niri `config.kdl`:
+**5. Add the following layer rules to your niri `config.kdl`:**
 ```
 layer-rule {
     match namespace="^awww-daemonoverview$"
@@ -55,13 +55,13 @@ layer-rule {
     }
 }
 ```
-6. Start the wallpaper daemon for the workspaces and overview:
+**6. Start the wallpaper daemon for the workspaces and overview:**
 ```bash
 awww-daemon -n workspaces
 awww-daemon -n overview
 ```
 
-7. Start the shell:
+**7. Start the shell:**
 ```bash
 python main.py
 ```
@@ -76,18 +76,18 @@ spawn-sh-at-startup "~/bomb-shell/venv/bin/python main.py"
 ```
 Alternatively, if you start niri as a sytemd unit with `niri-session` or equivalent (recommended, see [here](https://niri-wm.github.io/niri/Example-systemd-Setup.html) for more details) follow these steps:
 
-1. Create a systemd user configuration folder if it doesn't exist already:
+**1. Create a systemd user configuration folder if it doesn't exist already:**
 ```bash
 mkdir -p ~/.config/systemd/user
 ```
-2. Adjust and copy the provided `.service` files to the systemd config folder:
+**2. Adjust and copy the provided `.service` files to the systemd config folder:**
 > [!TIP]
 > Replace `%h/bomb-shell` with the location at which you cloned this repo in `bombshell.service`.  
 > Replace `/usr/bin/awww-daemon` with the path to your `awww-daemon` binary in `awww@.service`.
 ```bash
 cp ~/bomb-shell/systemd/* ~/.config/systemd/user
 ```
-3. Link the services to niri: 
+**3. Link the services to niri:**
 ```bash
 systemctl --user add-wants niri.service bombshell.service
 systemctl --user add-wants niri.service awww@workspaces.service
