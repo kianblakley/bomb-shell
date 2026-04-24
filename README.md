@@ -113,9 +113,9 @@ gsettings set org.gnome.desktop.interface icon-theme "Your icon theme"
 gsettings set org.gnome.desktop.interface font-name "Your font name"
 ```
 > [!NOTE]
-> The icon theme shown in the demo is [Papirus](), and the font is [Jet Brains Mono Nerd Font]().
-> For the window configurations please see the example `config.kdl` in the project root. 
-> Additionally, the wallpapers shown in the demo can be found in `wallpapers/`.
+> The icon theme shown in the demo is [Papirus](), and the font is [Jet Brains Mono Nerd Font]().  
+> For the window configurations please see the example `config.kdl` in the project root.   
+> Additionally, the wallpapers shown in the demo can be found in `wallpapers/`.  
 
 ## Acknowledgements:
 [@its-darsh](https://github.com/its-darsh) and the fabric community for building fabric and helping me out on the discord.  
