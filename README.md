@@ -107,7 +107,7 @@ The `config.json` file in the root of the project allows for limited configurati
 | `"profile_picture"` | `"./assets/penguin.png"` | Set the path to the user's picture displayed in the control center |
 | `"transparency"` | `true` | Allows the user to switch between the default `opaque` and `transparent` styles |
 
-The shell reads from GNOME's interface setting's which can be set via:
+The shell inherits its icon theme and font from GTK settings, which can be set by running:
 ```bash
 gsettings set org.gnome.desktop.interface icon-theme "Papirus"
 gsettings set org.gnome.desktop.interface font-name "JetBrains Mono Nerd Font 11"
