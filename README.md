@@ -17,6 +17,9 @@
 | [`fabric`](https://github.com/Fabric-Development/fabric)| GUI toolkit | [fabric](https://wiki.ffpy.org/getting-started/installation-guide/) |
 | [`awww`](https://codeberg.org/LGFae/awww) | Wallpaper daemon |  [awww](https://codeberg.org/LGFae/awww) |
 
+> [!IMPORTANT]
+> The following steps assume you are in an active niri session.
+
 **2. Clone and navigate to the repo:**
 ```bash
 git clone https://github.com/kianblakley/bomb-shell.git
