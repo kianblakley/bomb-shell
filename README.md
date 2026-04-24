@@ -14,7 +14,7 @@
 | [`fabric`](https://github.com/Fabric-Development/fabric)| GUI toolkit | [fabric](https://wiki.ffpy.org/getting-started/installation-guide/) |
 | [`awww`](https://codeberg.org/LGFae/awww) | Wallpaper daemon |  [awww](https://codeberg.org/LGFae/awww) |
 > [!NOTE] 
-> Fabric's python package is already included in this project's `requirements.txt`, at the moment you only need to install fabric's system dependencies.
+> Fabric's python package is already included in this project's `requirements.txt`, you only need to install fabric's system dependencies.
 
 **2. Clone and navigate to the repo:**
 ```bash
