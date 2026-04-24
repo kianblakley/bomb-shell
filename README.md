@@ -1,23 +1,22 @@
 <h1 align=center>bomb-shell</h1>
 
 > [!WARNING] 
-> The shell is currently in alpha and may not be stable. If you encounter any bugs please open a GitHub issue.
+> This project is currently in alpha. If you encounter any bugs please open a GitHub issue.
 
 ![Screenshot](assets/1.png)
 
-
 ## Dependencies:
-| Dependency | Used For | Installation |
+| Dependency | Used For | Repo |
 | --- | --- | --- |
-| `niri` | Window manager | [niri](https://niri-wm.github.io/niri/Getting-Started.html) |
-| `fabric` | GUI toolkit | [fabric](https://wiki.ffpy.org/getting-started/installation-guide/) |
-| `awww` | Wallpaper daemon | [awww](https://codeberg.org/LGFae/awww) |
+| `niri` | Window manager | [niri](https://github.com/niri-wm/niri) |
+| `fabric` | GUI toolkit | [fabric](https://github.com/Fabric-Development/fabric) |
+| `awww (formerly swww)` | Wallpaper daemon | [awww](https://codeberg.org/LGFae/awww) |
 
 ## Installation:
 
-1. Install dependencies for your distribution using the links above.
-> [!TIP] 
-> Fabric's python package is already included in this project's requirements.txt, you only need to install Fabric's system dependencies to avoid installing twice.
+1. Install the above dependencies for your distribution. Installation instructions can be found here: [niri](https://niri-wm.github.io/niri/Getting-Started.html), [fabric](https://wiki.ffpy.org/getting-started/installation-guide/), [awww](https://codeberg.org/LGFae/awww). 
+> [!NOTE] 
+> Fabric's python package is already included in this project's requirements.txt, at the moment you only need to install Fabric's system dependencies.
 
 2. Clone and navigate to the repo:
 ```bash
