@@ -1,7 +1,7 @@
 <h1 align=center>bomb-shell</h1>
 
 > [!WARNING] 
-> This project is currently in alpha. If you encounter any bugs please open a GitHub issue.
+> This project is currently in Alpha. If you encounter any bugs please open a GitHub issue.
 
 ![Screenshot](assets/1.png)
 
@@ -103,15 +103,19 @@ The `config.json` file in the root of the project allows for limited configurati
 
 | Key | Default Value | Function |
 | --- | --- | --- |
-| `"wallpapers_path"` | `"~/Pictures/wallpapers/"` | Set the folder from which the background selector reads wallpapers (demo wallpapers can be found in `wallpapers/`) |
+| `"wallpapers_path"` | `"~/Pictures/wallpapers/"` | Set the folder from which the background selector reads wallpapers |
 | `"profile_picture"` | `"./assets/penguin.png"` | Set the path to the user's picture displayed in the control center |
 | `"transparency"` | `true` | Allows the user to switch between the default `opaque` and `transparent` styles |
 
-The shell inherits its icon theme and font from GTK settings, which can be set by running:
+The shell inherits its icon theme and font from GTK settings, which can be changed by running:
 ```bash
-gsettings set org.gnome.desktop.interface icon-theme "Papirus"
-gsettings set org.gnome.desktop.interface font-name "JetBrains Mono Nerd Font 11"
+gsettings set org.gnome.desktop.interface icon-theme "Your icon theme"
+gsettings set org.gnome.desktop.interface font-name "Your font name"
 ```
+> [!NOTE]
+> The icon theme shown in the demo is [Papirus](), and the font is [Jet Brains Mono Nerd Font]().
+> For the window configurations please see the example `config.kdl` in the project root. 
+> Additionally, the wallpapers shown in the demo can be found in `wallpapers/`.
 
 ## Acknowledgements:
 [@its-darsh](https://github.com/its-darsh) and the fabric community for building fabric and helping me out on the discord.  
