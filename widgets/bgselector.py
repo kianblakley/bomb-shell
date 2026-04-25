@@ -243,7 +243,7 @@ class BgSelector(WaylandWindow):
             ]
         )
         self.toggle()
-        invoke_repeater(150, lambda: (self.cycle_carousel("right"), self.scroll_to_centered_wallpaper(), False)[2], initial_call=False)
+        # invoke_repeater(150, lambda: (self.cycle_carousel("right"), self.scroll_to_centered_wallpaper(), False)[2], initial_call=False)
     
 
 
