@@ -3,8 +3,14 @@
 > [!WARNING] 
 > This project is currently in Alpha. If you encounter any bugs please open a GitHub issue.
 
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=U-_ItNYb4uY">
+    <img src="https://img.youtube.com/vi/U-_ItNYb4uY/maxresdefault.jpg" 
+         alt="Watch the video" 
+         width="100%">
+  </a>
+</p>
 
-![![Watch the video](./assets/demo-thumbnail.png)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 ## Installation:
 
