@@ -18,30 +18,7 @@ ACTION_BUTTONS_PER_ROW = 2
 SCREEN_SIZE = niri_service.get_screen_size()
 
 NOTIFICATION_FALLBACK_ICON_CANDIDATES = [
-                      
-                               
-                          
-                                                  
-                                
-                                    
-                         
     "org.xfce.notification",
-    "xfce4-notifyd",
-    "bell",
-    "stock_bell",
-    "preferences-desktop-notification-bell",
-    "preferences-system-notifications-symbolic",
-    "notifications-symbolic",
-    "dialog-information-symbolic",
-    "mail-unread-symbolic",
-    "appointment-soon-symbolic",
-    "emblem-important-symbolic",
-    "preferences-system-notifications",
-    "notifications",
-    "dialog-information",
-    "mail-unread",
-    "appointment-soon",
-    "emblem-important",
 ]
 
 
