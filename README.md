@@ -3,13 +3,24 @@
 > [!WARNING] 
 > This project is currently in Alpha. If you encounter any bugs please open a GitHub issue.
 
-<p align="center">
-  <a href="https://www.youtube.com/watch?v=U-_ItNYb4uY">
-    <img src="https://img.youtube.com/vi/U-_ItNYb4uY/maxresdefault.jpg" 
-         alt="Watch the video" 
-         width="100%">
-  </a>
-</p>
+
+## Gallery
+
+| Background Selector |
+|--------------------|
+| ![Background Selector](./assets/bgselector.png) |
+
+| App Drawer |
+|------------|
+| ![App Drawer](./assets/appdrawer.png) |
+
+| Control Center |
+|---------|
+| ![Control Center](./assets/controlcenter.png) |
+
+| Flyouts |
+|-----------|
+| ![Flyouts](./assets/flyouts.png) |
 
 
 ## Installation:
