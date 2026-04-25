@@ -1,4 +1,8 @@
-<h1 align=center>bomb-shell</h1>
+<h1 align=center>
+  <img src="./assets/bombshell.png" alt="icon" width="30"/>
+  bomb-shell
+  <img src="./assets/bombshell.png" alt="icon" width="30"/>
+</h1>
 
 > [!WARNING] 
 > This project is currently in Alpha. If you encounter any bugs please open a GitHub issue.
@@ -89,7 +93,12 @@ awww-daemon -n overview
 ```bash
 python main.py
 ```
-## Autostart:
+
+<h2>
+  <img src="./assets/autostart.png" alt="icon" width="30"/>
+  Autostart:
+</h2>
+
 The simplest method is to add the following lines to your niri `config.kdl`:
 > [!TIP]
 > Replace `~/bomb-shell` with the location at which you cloned this repo. 
@@ -122,7 +131,11 @@ The shell can now be restarted at anytime with:
 systemctl --user restart bombshell.service
 ```
 
-## Configuration:
+<h2>
+  <img src="./assets/configuration.png" alt="icon" width="30"/>
+  Configuration:
+</h2>
+
 The `config.json` file in the root of the project allows for limited configuration:
 
 | Key | Default Value | Function |
@@ -140,7 +153,11 @@ gsettings set org.gnome.desktop.interface font-name "Your font name"
 > The icon theme shown in the demo is [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme), and the font is [Jet Brains Mono Nerd Font](https://www.nerdfonts.com/font-downloads).  
 > Additionally, the wallpapers shown in the demo can be found in `wallpapers/`.  
 
-## Acknowledgements:
+<h2>
+  <img src="./assets/acknowledgements.png" alt="icon" width="30"/>
+  Acknowledgements:
+</h2>
+
 [@its-darsh](https://github.com/its-darsh) and the fabric community for building fabric and helping me out on the discord.  
 [@Axenide](https://github.com/Axenide) for writing the upower and networking services.  
 [@Inparsian](https://github.com/Inparsian) for inspiring the design of the control center.  
