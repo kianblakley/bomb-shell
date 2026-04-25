@@ -3,8 +3,10 @@
 > [!WARNING] 
 > This project is currently in Alpha. If you encounter any bugs please open a GitHub issue.
 
-
-## Gallery
+<h2>
+  <img src="./assets/gallery.png" alt="camera with flash" width="25"/>
+  Gallery  
+</h2>
 
 | Background Selector |
 |--------------------|
@@ -133,7 +135,6 @@ gsettings set org.gnome.desktop.interface font-name "Your font name"
 ```
 > [!NOTE]
 > The icon theme shown in the demo is [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme), and the font is [Jet Brains Mono Nerd Font](https://www.nerdfonts.com/font-downloads).  
-> For the window configurations please see the example `config.kdl` in the project root.   
 > Additionally, the wallpapers shown in the demo can be found in `wallpapers/`.  
 
 ## Acknowledgements:
