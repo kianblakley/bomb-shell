@@ -1,14 +1,14 @@
 <h1 align=center>
-  <img src="./assets/bombshell.png" alt="icon" width="30"/>
+  <img src="./assets/fire.png" alt="icon" width="30"/>
   bomb-shell
-  <img src="./assets/bombshell.png" alt="icon" width="30"/>
+  <img src="./assets/fire.png" alt="icon" width="30"/>
 </h1>
 
 > [!WARNING] 
 > This project is currently in Alpha. If you encounter any bugs please open a GitHub issue.
 
 <h2>
-  <img src="./assets/gallery.png" alt="icon" width="30"/>
+  <img src="./assets/camera.png" alt="icon" width="30"/>
   Gallery:
 </h2>
 
@@ -30,7 +30,7 @@
 
 
 <h2>
-  <img src="./assets/installation.png" alt="icon" width="30"/>
+  <img src="./assets/hourglass.png" alt="icon" width="30"/>
   Installation:
 </h2>
 
@@ -95,7 +95,7 @@ python main.py
 ```
 
 <h2>
-  <img src="./assets/autostart.png" alt="icon" width="30"/>
+  <img src="./assets/robot.png" alt="icon" width="30"/>
   Autostart:
 </h2>
 
@@ -132,7 +132,7 @@ systemctl --user restart bombshell.service
 ```
 
 <h2>
-  <img src="./assets/configuration.png" alt="icon" width="30"/>
+  <img src="./assets/crystalball.png" alt="icon" width="30"/>
   Configuration:
 </h2>
 
@@ -154,13 +154,13 @@ gsettings set org.gnome.desktop.interface font-name "Your font name"
 > Additionally, the wallpapers shown in the demo can be found in `wallpapers/`.  
 
 <h2>
-  <img src="./assets/acknowledgements.png" alt="icon" width="30"/>
+  <img src="./assets/partypopper.png" alt="icon" width="30"/>
   Acknowledgements:
 </h2>
 
 [@its-darsh](https://github.com/its-darsh) and the fabric community for building fabric and helping me out on the discord.  
 [@Axenide](https://github.com/Axenide) for writing the upower and networking services.  
 [@Inparsian](https://github.com/Inparsian) for inspiring the design of the control center.  
-
+[@Camille Unkown](https://x.com/CamiUnknown?s=20), [@waneella](https://x.com/waneella_?s=20), [@finch](https://x.com/illufinch?s=20), [@TofuPixel](https://x.com/TofuPixel?s=20), [@Yes I Do](https://x.com/yes_i_do_pixels?s=20), [@Slynyrd](https://x.com/rayslynyrd) for creating the stunning wallpapers.
 
 
