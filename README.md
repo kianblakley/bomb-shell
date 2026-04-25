@@ -151,7 +151,7 @@ gsettings set org.gnome.desktop.interface font-name "Your font name"
 ```
 > [!NOTE]
 > The icon theme shown in the demo is [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme), and the font is [Jet Brains Mono Nerd Font](https://www.nerdfonts.com/font-downloads).  
-> Additionally, the wallpapers shown in the demo can be found in the `wallpapers/` folder.  
+> Additionally, the wallpapers shown in the demo can be found in the `wallpapers` folder.  
 
 <h2>
   <img src="./assets/partypopper.png" alt="icon" width="30"/>
