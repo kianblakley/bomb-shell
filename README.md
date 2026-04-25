@@ -3,7 +3,8 @@
 > [!WARNING] 
 > This project is currently in Alpha. If you encounter any bugs please open a GitHub issue.
 
-![Screenshot](assets/1.png)
+
+![![Watch the video](./assets/demo-thumbnail.png)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
 
 ## Installation:
 
