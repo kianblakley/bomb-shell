@@ -1,5 +1,5 @@
 {
     "wallpapers_path": "~/Pictures/wallpapers/",
-    "profile_picture": "~/Pictures/shell/penguin.jpg",
+    "profile_picture": "./assets/penguin.jpg",
     "transparency": true
 }
