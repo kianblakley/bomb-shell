@@ -4,8 +4,8 @@
 > This project is currently in Alpha. If you encounter any bugs please open a GitHub issue.
 
 <h2>
-  <img src="./assets/gallery.png" alt="camera with flash" width="25"/>
-  Gallery  
+  <img src="./assets/gallery.png" alt="icon" width="30"/>
+  Gallery:
 </h2>
 
 | Background Selector |
@@ -25,7 +25,10 @@
 | ![Flyouts](./assets/flyouts.png) |
 
 
-## Installation:
+<h2>
+  <img src="./assets/installation.png" alt="icon" width="30"/>
+  Installation:
+</h2>
 
 **1. Install the following dependencies for your distribution:**   
 > [!NOTE] 
