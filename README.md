@@ -141,7 +141,7 @@ The `config.json` file in the root of the project allows for limited configurati
 | Key | Default Value | Function |
 | --- | --- | --- |
 | `"wallpapers_path"` | `"~/Pictures/wallpapers/"` | Set the folder from which the background selector reads wallpapers |
-| `"profile_picture"` | `"./assets/penguin.png"` | Set the path to the user's picture displayed in the control center |
+| `"profile_picture"` | `"./assets/penguin.jpg"` | Set the path to the user's picture displayed in the control center |
 | `"transparency"` | `true` | Allows the user to switch between the default `opaque` and `transparent` styles |
 
 The shell inherits its icon theme and font from GTK settings, which can be changed by running:
