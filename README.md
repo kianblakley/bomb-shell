@@ -36,7 +36,7 @@
 
 **1. Install the following dependencies for your distribution:**   
 > [!NOTE] 
-> Fabric's python package is already included in this project's `requirements.txt`, you only need to install fabric's system dependencies.
+> You only need to install fabric's dependencies (ie. steps 1. and 2. from the installation guide), as fabric's python package is included in this projects `requirements.txt`.
 
 | Dependency | Used For | Installation Guide |
 | --- | --- | --- | 
@@ -158,9 +158,9 @@ gsettings set org.gnome.desktop.interface font-name "Your font name"
   Acknowledgements:
 </h2>
 
-[@its-darsh](https://github.com/its-darsh) and the fabric community for building fabric and helping me out on the discord.  
-[@Axenide](https://github.com/Axenide) for writing the upower and networking services.  
-[@Inparsian](https://github.com/Inparsian) for inspiring the design of the control center.  
-[@Camille Unkown](https://x.com/CamiUnknown?s=20), [@waneella](https://x.com/waneella_?s=20), [@finch](https://x.com/illufinch?s=20), [@TofuPixel](https://x.com/TofuPixel?s=20), [@Yes I Do](https://x.com/yes_i_do_pixels?s=20), [@Slynyrd](https://x.com/rayslynyrd) for creating the stunning wallpapers.
+* [@its-darsh](https://github.com/its-darsh) and the fabric community for building fabric and helping me out on the discord.  
+* [@Axenide](https://github.com/Axenide) for writing the upower and networking services.  
+* [@Inparsian](https://github.com/Inparsian) for inspiring the design of the control center.  
+* [@Camille Unkown](https://x.com/CamiUnknown?s=20), [@waneella](https://x.com/waneella_?s=20), [@finch](https://x.com/illufinch?s=20), [@TofuPixel](https://x.com/TofuPixel?s=20), [@Yes I Do](https://x.com/yes_i_do_pixels?s=20), [@Slynyrd](https://x.com/rayslynyrd) for creating the stunning wallpapers.
 
 
