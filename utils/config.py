@@ -38,8 +38,10 @@ class Config:
     
     def get_setting(self, key):
         setting = self.settings[key]
-        if isinstance(setting, str) and setting.startswith("~"):
-            return Path(setting).expanduser()
+        if isinstance(setting, str):
+            return Path(setting).expanduser().resolve()
+            
         return setting
+
 
 config = Config()
