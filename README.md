@@ -36,7 +36,7 @@
 
 **1. Install the following dependencies for your distribution:**   
 > [!NOTE] 
-> You only need to install fabric's dependencies (i.e. steps 1 and 2 from the linked installation guide) as fabric's python package is already included in this projects `requirements.txt`.
+> You only need to complete steps 1. and 2. from fabric's installation guide. Fabric's python package is already included in this project's `requirements.txt`.
 
 | Dependency | Used For | Installation Guide |
 | --- | --- | --- | 
