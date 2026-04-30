@@ -6,3 +6,4 @@ Requisite=graphical-session.target
 [Service]
 ExecStart=%h/bomb-shell/venv/bin/python %h/bomb-shell/main.py
 Restart=on-failure
+WorkingDirectory=%h/bomb-shell
