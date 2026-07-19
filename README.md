@@ -4,8 +4,8 @@
   <img src="./assets/fire.png" alt="icon" width="30"/>
 </h1>
 
-> [!WARNING] 
-> This project is currently in Alpha. If you encounter any bugs please open a GitHub issue.
+> [!WARNING]
+> This project is now in maintenance mode. No new features will be added. If you are looking for something more up to date check out my new project [pibble](https://github.com/kianblakley/pibble).
 
 <h2>
   <img src="./assets/camera.png" alt="icon" width="30"/>
